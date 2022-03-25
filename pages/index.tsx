@@ -1,7 +1,8 @@
+import { Button } from "@mantine/core";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
-  return <div>hello world</div>;
+  return <Button color={"green"} radius={"xl"}>Hello world</Button>;
 };
 
 export default Home;
