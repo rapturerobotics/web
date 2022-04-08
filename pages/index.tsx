@@ -24,7 +24,7 @@ const Home: NextPage = () => {
   const [blogs, setBlogs] = useState<Array<Blog>>([]);
 
   const handleClick = async () => {
-    const { data, error } = await supabase.from<Blog>("blogs").select();
+    const { data, error } = await supabase.from<Blog>("blog").select();
     console.log(data);
     if (error) console.error(error);
     setBlogs(data ?? []);
