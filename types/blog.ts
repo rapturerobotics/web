@@ -1,10 +1,24 @@
+import Author from "./author";
+import Tag from "./tag";
+
 type Blog = {
   id: number;
   created_at: string;
   title: string;
+  description: string;
   content: string;
   background_image: string;
-  author_id: string;
+  author: string;
+};
+
+export type PreviewedBlog = {
+  id: number;
+  created_at: string;
+  title: string;
+  description: string;
+  background_image: string;
+  author: Author;
+  tags: Array<Tag>;
 };
 
 export default Blog;
