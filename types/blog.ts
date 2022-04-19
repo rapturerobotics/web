@@ -21,4 +21,9 @@ export type PreviewedBlog = {
   tags: Array<Tag>;
 };
 
+export type QueriedBlog = Blog & {
+  author: Author;
+  tags: Array<Tag>;
+};
+
 export default Blog;
