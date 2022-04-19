@@ -37,13 +37,13 @@ const BlogHomePage: NextPage = () => {
         <title>Rapture Blog</title>
       </Head>
 
-      <div className="w-full max-w-3xl p-4 pt-16 flex flex-col gap-4">
+      <div className="w-full max-w-5xl p-4 pt-16 flex flex-col gap-4">
         <h1 className="text-6xl font-semibold mb-8 font-work">Rapture Blog</h1>
 
         {loading ? (
           <></>
         ) : (
-          <section className="grid grid-cols-1 md:grid-cols-2">
+          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {blogs.map((blog) => (
               <BlogCard blog={blog} key={blog.id} />
             ))}
