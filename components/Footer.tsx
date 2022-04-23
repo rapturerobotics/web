@@ -46,8 +46,8 @@ const Footer: React.FC = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center pt-16 p-12 gap-2">
       <div className="flex gap-2">
-        {socialLinks.map((link) => (
-          <Link href={link.href} passHref={true}>
+        {socialLinks.map((link, index) => (
+          <Link href={link.href} passHref={true} key={index}>
             <a target="_blank">{<link.icon size={32} />}</a>
           </Link>
         ))}
