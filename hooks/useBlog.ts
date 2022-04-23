@@ -2,7 +2,9 @@ import { useQuery } from "react-query";
 import { QueriedBlog } from "../types/blog";
 import supabase from "../utils/supabase";
 
-const fetchBlog = async (blogId: string) => {
+const fetchBlog = async (blogId: string | undefined) => {
+  if (!blogId) return;
+
   const { data: blog, error } = await supabase
     .from<QueriedBlog>("blogs")
     .select(
@@ -25,6 +27,7 @@ const fetchBlog = async (blogId: string) => {
   return blog;
 };
 
-const useBlog = (blogId: string) => useQuery("blog", () => fetchBlog(blogId));
+const useBlog = (blogId: string | undefined) =>
+  useQuery("blog", () => fetchBlog(blogId));
 
 export default useBlog;
