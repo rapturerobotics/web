@@ -14,7 +14,7 @@ const fetchBlogs = async () => {
   }
 
   if (!blogs) {
-    throw new Error("Users not found");
+    throw new Error("Blogs not found");
   }
 
   return blogs;
