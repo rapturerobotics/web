@@ -1,45 +1,14 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import { QueriedBlog } from "../../types/blog";
-import supabase from "../../utils/supabase";
+import useBlog from "../../hooks/useBlog";
 
 const BlogPostPage = () => {
   const router = useRouter();
   const blogId = router.query.id as string;
+  const { data: blog, isLoading } = useBlog(blogId);
 
-  const [blog, setBlog] = useState<QueriedBlog | null>(null);
-  const [loading, setLoading] = useState(true);
-
-  const fetchBlogs = async () => {
-    const { data: blog, error } = await supabase
-      .from<QueriedBlog>("blogs")
-      .select(
-        `
-        id, created_at, title,description, content, background_image,
-        author ( id, name ), tags ( id, label )
-        `
-      )
-      .eq("id", blogId)
-      .single();
-
-    if (error) {
-      console.error(error);
-      return;
-    }
-
-    if (blog) {
-      setBlog(blog);
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchBlogs();
-  }, [fetchBlogs]);
-
-  if (loading || !blog) {
+  if (isLoading || !blog) {
     return <></>;
   }
 
