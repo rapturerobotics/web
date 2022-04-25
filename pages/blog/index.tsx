@@ -13,7 +13,7 @@ const BlogHomePage: NextPage = () => {
         <title>Rapture Blog</title>
       </Head>
 
-      <div className="w-full max-w-5xl p-4 pt-16 flex flex-col gap-4 min-h-screen">
+      <div className="w-full max-w-5xl p-4 pt-16 flex flex-col gap-4">
         <h1 className="text-6xl font-semibold mb-8 font-work">Rapture Blog</h1>
 
         {isLoading ? (
