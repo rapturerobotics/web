@@ -49,7 +49,9 @@ const Footer: React.FC = () => {
       <div className="flex gap-2 mb-1">
         {socialLinks.map((link, index) => (
           <Link href={link.href} passHref={true} key={index}>
-            <a target="_blank">{<link.icon size={32} />}</a>
+            <a target="_blank" className="hover:text-blue-500">
+              <link.icon size={32} />
+            </a>
           </Link>
         ))}
       </div>
@@ -62,7 +64,7 @@ const Footer: React.FC = () => {
           <FaHeart className="inline" />
         </span>{" "}
         by{" "}
-        <span className="text-gray-300">
+        <span className="text-gray-300 hover:text-blue-500">
           <Link href="https://www.linkedin.com/in/bayram-kazik" passHref={true}>
             <a>Bayram</a>
           </Link>
