@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         work: ["Work Sans", "sans"],
         akshar: ["Akshar", "sans"],
+        inter: ["Inter", "sans"],
       },
       colors: {},
     },
