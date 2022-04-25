@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Header: React.FC = () => {
   return (
-    <header className="flex justify-center p-4 px-8">
+    <header className="flex justify-center p-4 px-8 border-b border-b-slate-800">
       <nav className="w-full max-w-5xl flex justify-between">
         <Link href="/" passHref={true}>
           <a className="flex items-center gap-2">
