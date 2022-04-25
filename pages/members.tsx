@@ -6,7 +6,7 @@ import MemberCard from "../components/MemberCard";
 const MembersPage: NextPage = () => {
   return (
     <div className="flex justify-center">
-      <div className="flex flex-col w-full max-w-5xl pt-16">
+      <div className="flex flex-col w-full max-w-5xl pt-16 p-4">
         <Header1>Team Members</Header1>
 
         <div className="prose prose-invert max-w-full text-lg">
