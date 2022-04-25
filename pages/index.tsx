@@ -6,11 +6,6 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Rapture Robotics</title>
-        <link
-          rel="icon"
-          type="image/x-icon"
-          href="https://ceamlmpfvaqkmhrnccjo.supabase.co/storage/v1/object/public/images/rapture_logo_transparent_1024x1024.png"
-        />
       </Head>
     </>
   );
