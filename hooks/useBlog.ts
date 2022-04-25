@@ -1,5 +1,5 @@
 import { useQuery } from "react-query";
-import { QueriedBlog } from "../types/blog";
+import { ObjectedBlog, QueriedBlog } from "../types/blog";
 import supabase from "../utils/supabase";
 
 const fetchBlog = async (blogId: string | undefined) => {
@@ -9,7 +9,7 @@ const fetchBlog = async (blogId: string | undefined) => {
     .from<QueriedBlog>("blogs")
     .select(
       `
-      id, created_at, title,description, content, background_image,
+      id, created_at, title, description, content, background_image,
       author ( id, name ), tags ( id, label )
       `
     )
@@ -24,7 +24,12 @@ const fetchBlog = async (blogId: string | undefined) => {
     throw new Error("Blog not found");
   }
 
-  return blog;
+  const objectedBlog: ObjectedBlog = {
+    ...blog,
+    created_at: new Date(blog.created_at),
+  };
+
+  return objectedBlog;
 };
 
 const useBlog = (blogId: string | undefined) =>
