@@ -21,7 +21,24 @@ export type PreviewedBlog = {
   tags: Array<Tag>;
 };
 
-export type QueriedBlog = Blog & {
+export type QueriedBlog = {
+  id: number;
+  created_at: string;
+  title: string;
+  description: string;
+  content: string;
+  background_image: string;
+  author: Author;
+  tags: Array<Tag>;
+};
+
+export type ObjectedBlog = {
+  id: number;
+  created_at: Date;
+  title: string;
+  description: string;
+  content: string;
+  background_image: string;
   author: Author;
   tags: Array<Tag>;
 };
