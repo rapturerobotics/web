@@ -26,10 +26,15 @@ const BlogPostPage = () => {
         />
 
         <div className="w-full flex flex-col items-center">
-          <div className="w-full max-w-3xl p-4 pt-16 flex flex-col gap-4">
-            <h1 className="text-6xl font-semibold mb-8 font-work text-center">
-              {blog.title}
-            </h1>
+          <div className="w-full max-w-5xl p-4 pt-16 flex flex-col gap-4">
+            <div className="text-center flex flex-col gap-2 mb-8">
+              <h1 className="text-6xl font-semibold font-work">{blog.title}</h1>
+
+              <p className="text-slate-400">
+                By <span className="text-slate-200">{blog.author.name}</span> at{" "}
+                <span>{blog.created_at.toDateString()}</span>
+              </p>
+            </div>
 
             <div className="prose prose-invert max-w-full">
               <ReactMarkdown className="w-full h-full overflow-hidden">
