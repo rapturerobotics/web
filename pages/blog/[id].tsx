@@ -37,7 +37,7 @@ const BlogPostPage = () => {
             </div>
 
             <div className="prose prose-invert max-w-full">
-              <ReactMarkdown className="w-full h-full overflow-hidden">
+              <ReactMarkdown className="w-full h-full overflow-hidden text-lg">
                 {blog.content}
               </ReactMarkdown>
             </div>
