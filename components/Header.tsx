@@ -20,14 +20,9 @@ const Header: React.FC = () => {
           </a>
         </Link>
 
-        <div className="flex items-center font-semibold">
-          <Link href="/blog" passHref={true}>
-            <a>Blog</a>
-          </Link>
-
-          <Link href="" passHref={true}>
-            <a></a>
-          </Link>
+        <div className="flex items-center gap-4">
+          <NavLink href="/members">Members</NavLink>
+          <NavLink href="/blog">Blog</NavLink>
         </div>
       </nav>
     </header>
