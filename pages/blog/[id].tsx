@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import ReactMarkdown from "react-markdown";
 import Footer from "../../components/Footer";
+import LoadingIndicator from "../../components/LoadingIndicator";
 import useBlog from "../../hooks/useBlog";
 
 const BlogPostPage = () => {
@@ -10,7 +11,11 @@ const BlogPostPage = () => {
   const { data: blog, isLoading } = useBlog(blogId);
 
   if (isLoading || !blog) {
-    return <></>;
+    return (
+      <div className="w-full flex items-center justify-center">
+        <LoadingIndicator />
+      </div>
+    );
   }
 
   return (
