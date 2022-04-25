@@ -1,8 +1,9 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
 import {
   FaFacebook,
   FaGithub,
+  FaHeart,
   FaInstagram,
   FaLinkedin,
   FaTwitter,
@@ -45,7 +46,7 @@ const Footer: React.FC = () => {
 
   return (
     <div className="w-full flex flex-col items-center justify-center pt-16 p-12 gap-2">
-      <div className="flex gap-2">
+      <div className="flex gap-2 mb-1">
         {socialLinks.map((link, index) => (
           <Link href={link.href} passHref={true} key={index}>
             <a target="_blank">{<link.icon size={32} />}</a>
@@ -53,9 +54,21 @@ const Footer: React.FC = () => {
         ))}
       </div>
 
-      <div className="text-gray-400">Bayram Kazık • © 2022</div>
+      <div className="text-gray-400">Rapture Robotics • © 2022</div>
 
-      <div className="text-gray-400">Rapture Robotics</div>
+      <div className="text-gray-400">
+        Made with{" "}
+        <span className="px-1">
+          <FaHeart className="inline" />
+        </span>{" "}
+        by{" "}
+        <span className="text-gray-300">
+          <Link href="https://www.linkedin.com/in/bayram-kazik" passHref={true}>
+            <a>Bayram</a>
+          </Link>
+        </span>{" "}
+        from Rapture
+      </div>
     </div>
   );
 };
