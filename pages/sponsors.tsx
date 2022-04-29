@@ -20,7 +20,8 @@ const SponsorsPage: NextPage = () => {
         <Header1>Sponsors</Header1>
 
         <p className="text-lg">
-          We couldn't have done it without you. Thank you all!
+          We couldn&apos;t have done it without your support. Thanks to all of
+          you!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-16">
