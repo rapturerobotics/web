@@ -10,6 +10,7 @@ const Header: React.FC = () => {
           <a className="flex items-center gap-2">
             <img
               src="https://ceamlmpfvaqkmhrnccjo.supabase.co/storage/v1/object/public/images/rapture_logo_transparent_1024x1024.png"
+              aria-label="Rapture Logo"
               className="w-12 mb-1"
             />
 

@@ -49,7 +49,11 @@ const Footer: React.FC = () => {
       <div className="flex gap-2 mb-1">
         {socialLinks.map((link, index) => (
           <Link href={link.href} passHref={true} key={index}>
-            <a target="_blank" className="hover:text-blue-500">
+            <a
+              target="_blank"
+              className="hover:text-blue-500"
+              aria-label={link.alt}
+            >
               <link.icon size={32} />
             </a>
           </Link>
