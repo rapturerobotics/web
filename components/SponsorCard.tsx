@@ -11,6 +11,7 @@ const SponsorCard: React.FC<SponsorCardProps> = ({ sponsor }) => {
       className="h-full flex flex-col justify-center bg-white rounded p-4 shadow"
       href={sponsor.website_url}
       target="_blank"
+      rel="noreferrer"
     >
       <img
         src={sponsor.logo_image}
