@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Container from "../components/Container";
 import Footer from "../components/Footer";
-import Header1 from "../components/Header1";
+import Title from "../components/Title";
 import MemberCard from "../components/MemberCard";
 
 const MembersPage: NextPage = () => {
@@ -13,7 +13,7 @@ const MembersPage: NextPage = () => {
       </Head>
 
       <Container>
-        <Header1>Team Members</Header1>
+        <Title>Team Members</Title>
 
         <div className="prose prose-invert max-w-full text-lg">
           <p>

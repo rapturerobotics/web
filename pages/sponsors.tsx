@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Container from "../components/Container";
 import Footer from "../components/Footer";
-import Header1 from "../components/Header1";
+import Title from "../components/Title";
 import LoadingIndicator from "../components/LoadingIndicator";
 import SponsorCard from "../components/SponsorCard";
 import useSponsors from "../hooks/useSponsors";
@@ -17,7 +17,7 @@ const SponsorsPage: NextPage = () => {
       </Head>
 
       <Container>
-        <Header1>Sponsors</Header1>
+        <Title>Sponsors</Title>
 
         <p className="text-lg">
           We couldn&apos;t have done it without your support. Thanks to all of

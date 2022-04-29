@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import BlogCard from "../../components/BlogCard";
 import Footer from "../../components/Footer";
-import Header1 from "../../components/Header1";
+import Title from "../../components/Title";
 import LoadingIndicator from "../../components/LoadingIndicator";
 import useBlogs from "../../hooks/useBlogs";
 
@@ -16,7 +16,7 @@ const BlogHomePage: NextPage = () => {
       </Head>
 
       <div className="w-full max-w-5xl p-4 pt-16 flex flex-col gap-4">
-        <Header1>Rapture Blog</Header1>
+        <Title>Rapture Blog</Title>
         {isLoading ? (
           <div className="w-full h-64 flex items-center justify-center">
             <LoadingIndicator />
