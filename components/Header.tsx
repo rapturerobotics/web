@@ -1,7 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
-import NavLink from "./NavLink";
+import NavBar from "./NavBar";
 
 const Header: React.FC = () => {
   return (
@@ -20,10 +19,7 @@ const Header: React.FC = () => {
           </a>
         </Link>
 
-        <div className="flex items-center gap-4">
-          <NavLink href="/members">Members</NavLink>
-          <NavLink href="/blog">Blog</NavLink>
-        </div>
+        <NavBar />
       </nav>
     </header>
   );
