@@ -24,15 +24,15 @@ const SponsorsPage: NextPage = () => {
           you!
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-16">
-          {isLoading || !sponsors ? (
-            <LoadingIndicator />
-          ) : (
-            sponsors.map((sponsor) => (
+        {isLoading || !sponsors ? (
+          <LoadingIndicator />
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-16 w-full">
+            {sponsors.map((sponsor) => (
               <SponsorCard sponsor={sponsor} key={sponsor.id} />
-            ))
-          )}
-        </div>
+            ))}
+          </div>
+        )}
       </Container>
 
       <Footer />
