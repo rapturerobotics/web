@@ -1,12 +1,18 @@
 import { NextPage } from "next";
+import Head from "next/head";
+import Container from "../components/Container";
 import Footer from "../components/Footer";
 import Header1 from "../components/Header1";
 import MemberCard from "../components/MemberCard";
 
 const MembersPage: NextPage = () => {
   return (
-    <div className="flex justify-center">
-      <div className="flex flex-col w-full max-w-5xl pt-16 p-4">
+    <>
+      <Head>
+        <title>Rapture Team Members</title>
+      </Head>
+
+      <Container>
         <Header1>Team Members</Header1>
 
         <div className="prose prose-invert max-w-full text-lg">
@@ -163,8 +169,8 @@ const MembersPage: NextPage = () => {
         </div>
 
         <Footer />
-      </div>
-    </div>
+      </Container>
+    </>
   );
 };
 
