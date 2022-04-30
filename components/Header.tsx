@@ -7,10 +7,10 @@ const Header: React.FC = () => {
     <header className="flex justify-center p-4 px-8 border-b border-b-slate-800">
       <nav className="w-full max-w-5xl flex justify-between">
         <Link href="/" passHref={true}>
-          <a className="flex items-center gap-2">
+          <a className="flex items-center gap-2" aria-label="Rapture Logo">
             <img
               src="https://ceamlmpfvaqkmhrnccjo.supabase.co/storage/v1/object/public/images/rapture_logo_transparent_1024x1024.png"
-              aria-label="Rapture Logo"
+              alt="Rapture Logo"
               className="w-12 mb-1"
             />
 

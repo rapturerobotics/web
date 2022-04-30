@@ -25,6 +25,7 @@ const Home: NextPage = () => {
 
             <img
               src="https://ceamlmpfvaqkmhrnccjo.supabase.co/storage/v1/object/public/images/rapture_logo_transparent_1024x1024.png"
+              alt="Rapture logo with pulse animation"
               className="animate-pulse p-8"
             />
           </div>
