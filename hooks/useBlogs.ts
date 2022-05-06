@@ -7,7 +7,8 @@ const fetchBlogs = async () => {
     .select(`
       id, created_at, title, description, background_image,
       author ( id, name ), tags ( id, label )
-    `);
+    `)
+    .order('created_at', { ascending: false });
 
   if (error) {
     throw new Error(error.message);
