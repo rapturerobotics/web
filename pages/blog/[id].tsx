@@ -26,7 +26,7 @@ const BlogPostPage = () => {
 
       <div className="w-full flex flex-col items-center min-h-screen">
         <div
-          className="w-full h-[33vh] bg-center bg-cover bg-no-repeat"
+          className="w-full h-[50vh] bg-center bg-cover bg-no-repeat"
           style={{ backgroundImage: `url(${blog.background_image})` }}
         />
 
