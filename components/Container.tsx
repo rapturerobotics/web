@@ -12,7 +12,7 @@ const Container: React.FC<ContainerProps> = ({
   style,
 }) => {
   const mergedClassName = classNames(
-    "flex flex-col w-full max-w-5xl pt-16 p-6 mx-auto font-work tracking-tighter",
+    "flex flex-col w-full max-w-5xl pt-8 mx-auto tracking-tight",
     className
   );
 

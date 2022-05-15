@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import IntroductionBlock from "../components/IntroductionBlock";
 import Footer from "../components/Footer";
+import Container from "../components/Container";
 
 const Home: NextPage = () => {
   return (
@@ -10,13 +11,11 @@ const Home: NextPage = () => {
         <title>Rapture Robotics</title>
       </Head>
 
-      <div className="flex justify-center">
-        <div className="flex flex-col justify-between w-full max-w-5xl md:min-h-screen gap-8">
-          <IntroductionBlock />
+      <Container>
+        <IntroductionBlock />
 
-          <Footer />
-        </div>
-      </div>
+        <Footer />
+      </Container>
     </>
   );
 };
