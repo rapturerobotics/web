@@ -7,7 +7,7 @@ const Header: React.FC = () => {
   return (
     <Container
       row={true}
-      className="border-b-2 border-b-slate-800 sticky top-0 bg-inherit"
+      className="border-b-2 border-b-slate-800 sticky top-0 bg-inherit z-10"
     >
       <Link href="/" passHref={true}>
         <a className="flex items-center gap-2" aria-label="Rapture Logo">
