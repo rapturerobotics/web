@@ -2,7 +2,7 @@ import React from "react";
 
 const IntroductionBlock: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 pb-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 md:p-12 items-center gap-8 pb-8">
       <div>
         <h1 className="text-7xl font-semibold mb-8 font-work">
           Rapture Robotics
@@ -17,7 +17,7 @@ const IntroductionBlock: React.FC = () => {
       <img
         src="https://ceamlmpfvaqkmhrnccjo.supabase.co/storage/v1/object/public/images/rapture_logo_transparent_1024x1024.png"
         alt="Rapture logo with pulse animation"
-        className="animate-pulse p-8"
+        className="animate-pulse p-2"
       />
     </div>
   );

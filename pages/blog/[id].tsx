@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import ReactMarkdown from "react-markdown";
-import Footer from "../../components/Footer";
 import LoadingIndicator from "../../components/LoadingIndicator";
 import useBlog from "../../hooks/useBlog";
 
@@ -33,7 +32,9 @@ const BlogPostPage = () => {
         <div className="w-full flex flex-col items-center">
           <div className="w-full max-w-5xl p-4 pt-16 flex flex-col gap-4">
             <div className="text-center flex flex-col gap-2 mb-8">
-              <h1 className="text-6xl font-semibold font-work">{blog.title}</h1>
+              <h1 className="text-4xl md:text-4xl font-semibold font-work">
+                {blog.title}
+              </h1>
 
               <p className="text-slate-400">
                 By <span className="text-slate-200">{blog.author.name}</span> at{" "}
@@ -42,15 +43,13 @@ const BlogPostPage = () => {
             </div>
 
             <div className="prose prose-invert max-w-full">
-              <ReactMarkdown className="w-full h-full overflow-hidden text-lg">
+              <ReactMarkdown className="w-full h-full overflow-hidden">
                 {blog.content}
               </ReactMarkdown>
             </div>
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

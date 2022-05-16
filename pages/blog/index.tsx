@@ -1,21 +1,21 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import BlogCard from "../../components/BlogCard";
-import Footer from "../../components/Footer";
 import Title from "../../components/Title";
 import LoadingIndicator from "../../components/LoadingIndicator";
 import useBlogs from "../../hooks/useBlogs";
+import Container from "../../components/Container";
 
 const BlogHomePage: NextPage = () => {
   const { data: blogs, isLoading } = useBlogs();
 
   return (
-    <div className="w-full h-full flex flex-col items-center">
+    <>
       <Head>
         <title>Rapture Blog</title>
       </Head>
 
-      <div className="w-full max-w-5xl p-4 pt-16 flex flex-col gap-4">
+      <Container contentPadding>
         <Title>Rapture Blog</Title>
         {isLoading ? (
           <div className="w-full h-64 flex items-center justify-center">
@@ -28,10 +28,8 @@ const BlogHomePage: NextPage = () => {
             ))}
           </section>
         )}
-      </div>
-
-      <Footer />
-    </div>
+      </Container>
+    </>
   );
 };
 

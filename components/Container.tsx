@@ -4,15 +4,21 @@ import classNames from "classnames";
 interface ContainerProps {
   className?: string;
   style?: React.CSSProperties;
+  row?: boolean;
+  contentPadding?: boolean;
 }
 
 const Container: React.FC<ContainerProps> = ({
   children,
   className,
   style,
+  row = false,
+  contentPadding = false,
 }) => {
   const mergedClassName = classNames(
-    "flex flex-col w-full max-w-5xl pt-8 mx-auto tracking-tight",
+    "flex w-full max-w-5xl px-4 py-2 mx-auto tracking-tight",
+    { "flex-col": !row, "justify-between": row },
+    { "pt-16": contentPadding },
     className
   );
 

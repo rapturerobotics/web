@@ -1,7 +1,6 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import Container from "../components/Container";
-import Footer from "../components/Footer";
 import Title from "../components/Title";
 import LoadingIndicator from "../components/LoadingIndicator";
 import SponsorCard from "../components/SponsorCard";
@@ -16,7 +15,7 @@ const SponsorsPage: NextPage = () => {
         <title>Rapture Sponsors</title>
       </Head>
 
-      <Container>
+      <Container contentPadding>
         <Title>Sponsors</Title>
 
         <p className="text-lg">
@@ -28,7 +27,7 @@ const SponsorsPage: NextPage = () => {
           <LoadingIndicator />
         ) : (
           <div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-16 w-full"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full pt-16"
             style={{ gridAutoRows: "1fr" }}
           >
             {sponsors.map((sponsor) => (
@@ -37,8 +36,6 @@ const SponsorsPage: NextPage = () => {
           </div>
         )}
       </Container>
-
-      <Footer />
     </>
   );
 };

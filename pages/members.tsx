@@ -1,7 +1,6 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import Container from "../components/Container";
-import Footer from "../components/Footer";
 import Title from "../components/Title";
 import MemberCard from "../components/MemberCard";
 
@@ -12,7 +11,7 @@ const MembersPage: NextPage = () => {
         <title>Rapture Team Members</title>
       </Head>
 
-      <Container>
+      <Container contentPadding>
         <Title>Team Members</Title>
 
         <div className="prose prose-invert max-w-full text-lg">
@@ -167,8 +166,6 @@ const MembersPage: NextPage = () => {
             Systems Competition’.
           </MemberCard>
         </div>
-
-        <Footer />
       </Container>
     </>
   );
