@@ -16,6 +16,8 @@ const IntroductionBlock: React.FC = () => {
 
       <img
         src="https://ceamlmpfvaqkmhrnccjo.supabase.co/storage/v1/object/public/images/rapture_logo_transparent_1024x1024.png"
+        width={1024}
+        height={1024}
         alt="Rapture logo with pulse animation"
         className="animate-pulse p-2"
       />
