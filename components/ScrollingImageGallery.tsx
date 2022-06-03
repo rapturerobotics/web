@@ -20,6 +20,7 @@ const ScrollingImageGallery: React.FC<ScrollingImageGalleryProps> = ({
       {imageSources.map((imageSource) => (
         <Image
           src={imageSource}
+          key={imageSource}
           className="w-full h-full"
           width={1024}
           height={1024}
