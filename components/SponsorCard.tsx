@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Sponsor from "../types/sponsor";
 
 interface SponsorCardProps {
@@ -13,8 +14,10 @@ const SponsorCard: React.FC<SponsorCardProps> = ({ sponsor }) => {
       target="_blank"
       rel="noreferrer"
     >
-      <img
+      <Image
         src={sponsor.logo_image}
+        width={1024}
+        height={1024}
         className="w-full text-slate-900"
         alt={`Logo of ${sponsor.name}`}
       />

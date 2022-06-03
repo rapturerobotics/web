@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export interface ScrollingImageGalleryProps {
   imageNames: string[];
@@ -17,7 +18,7 @@ const ScrollingImageGallery: React.FC<ScrollingImageGalleryProps> = ({
   return (
     <div className="w-full flex overflow-x-auto rounded-xl">
       {imageSources.map((imageSource) => (
-        <img
+        <Image
           src={imageSource}
           className="w-full h-full"
           width={1024}

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const IntroductionBlock: React.FC = () => {
   return (
@@ -14,11 +15,11 @@ const IntroductionBlock: React.FC = () => {
         </p>
       </div>
 
-      <img
+      <Image
         src="https://ceamlmpfvaqkmhrnccjo.supabase.co/storage/v1/object/public/images/rapture_logo_transparent_1024x1024.png"
+        alt="Rapture logo with pulse animation"
         width={1024}
         height={1024}
-        alt="Rapture logo with pulse animation"
         className="animate-pulse p-2"
       />
     </div>
