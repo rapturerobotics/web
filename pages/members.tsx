@@ -136,35 +136,6 @@ const MembersPage: NextPage = () => {
             2022 and I am excited to go to the USA in June with this team to the
             ‘Roboboat Surface Automotive Systems Competition’.
           </MemberCard>
-
-          <MemberCard title="Yağız Dilbas – Electrical & Electronics">
-            I am Yağız Dilbas, Member of Rapture Robotics Team, I am 17 years
-            old, a student studying at Keşan Science High School. I have been
-            training in advanced robotics, coding, internet of things, energy
-            systems, material sciences at Edirne Experimental Workshops for 3
-            years. At the same time, we enable our horizons to expand by
-            participating in METU Robot Days with the opportunities provided by
-            our Youth Centers. I joined the Rapture Robotics team in 2022, and
-            we aim to go to the ‘RoboBoat 15th Autonomous Surface Vehicle
-            Competition’ in the USA in June with this team, and the thought of
-            representing my country makes me excited. I am also the founder and
-            member of Keşan Science High School Teknofest ROV team.
-          </MemberCard>
-
-          <MemberCard title="Yakup Baturay Pekdemir – Electrical & Electronics">
-            I’m Yakup Baturay Pekdemir. I am an 11th grade student at Keşan
-            Science High School. I have been interested in robotics since a
-            young age, I like to deal with software and electronics. I learned
-            the Python language through experimentation and online courses I
-            took. I have been taking advanced robotics, coding, internet of
-            things, energy systems, material sciences trainings at Edirne
-            DENEYAP Technology Workshops for 3 years and I attended the METU
-            Robot Days this year, and I am also interested in Teknofest. I am
-            the founder and captain of the Keşan Science High School ROV team. I
-            joined the Rapture Robotics team in 2022 and I am excited to go to
-            the USA in June with this team to the ‘Roboboat Surface Automotive
-            Systems Competition’.
-          </MemberCard>
         </div>
       </Container>
     </>
