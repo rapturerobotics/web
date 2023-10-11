@@ -16,7 +16,7 @@ const MembersPage: NextPage = () => {
 
         <div className="prose prose-invert max-w-full text-lg">
           <p>
-            Our team consists of 7 team members. We are interested in
+            Our team consists of 5 team members. We are interested in
             technology, robotics, design and programming.
           </p>
 
