@@ -1,5 +1,5 @@
-import React from "react";
 import Image from "next/image";
+import React from "react";
 
 const IntroductionBlock: React.FC = () => {
   return (
@@ -20,7 +20,7 @@ const IntroductionBlock: React.FC = () => {
         alt="Rapture logo with pulse animation"
         width={1024}
         height={1024}
-        className="animate-pulse p-2"
+        className="motion-safe:animate-slight-tilt p-2"
       />
     </div>
   );
